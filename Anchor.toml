@@ -6,6 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
+cpi = "8YxNd8ZrJSya1fHnxrt83QBf47TLYpvdPUaZDxzUM66g"
 hello = "5QZMpEhUMqVmnMtLJ4snAQEnkWsxrP9KYYCqzweZhgsP"
 
 [registry]
