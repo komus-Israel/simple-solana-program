@@ -16,6 +16,11 @@ pub mod hello {
         msg!("Greetings from: {:?}", ctx.program_id);
         Ok(())
     }
+
+    pub fn increment(ctx: Context<Empty>) -> Result<()> {
+        msg!("Greetings from: {:?}", ctx.program_id);
+        Ok(())
+    }
 }
 
 //  Applied to structs to indicate a list of accounts required by an instruction
@@ -41,3 +46,6 @@ pub struct Initialize <'info>{
 pub struct NewAccount {
     data: u64
 }
+
+#[derive(Accounts)]
+pub struct Empty{}
